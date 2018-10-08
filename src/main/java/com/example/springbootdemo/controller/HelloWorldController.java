@@ -14,7 +14,6 @@ public class HelloWorldController {
     
     @RequestMapping("/hello")
     public String hello(ModelMap map){
-        System.out.println("helloworld init ..........");
         map.put("username", username);
         return "helloworld";
     }
