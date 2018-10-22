@@ -12,6 +12,8 @@ public class HelloWorldController {
     @Value("${username123}")
     private String username;
     
+    
+    
     @RequestMapping("/hello")
     public String hello(ModelMap map){
         map.put("username", username);
